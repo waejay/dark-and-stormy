@@ -1,0 +1,30 @@
+$black: #000000;
+$white: #FFF;
+$lightblue: #add8e6;
+
+a {
+
+	text-decoration: none;
+	color: $white;
+	&:hover {
+		color: darken($white, 20%);
+	}
+	text-align: center;
+}
+@mixin timeline {
+	text-align: center;
+}
+p {
+	@include timeline;
+	color: $white;
+
+}
+
+h1 {
+	@include timeline;
+	color: $lightblue;
+}
+
+body {
+	background-color: $black;
+}
